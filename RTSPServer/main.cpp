@@ -1,53 +1,30 @@
-#include "Thread.h"
+ï»¿#include <thread> 
 #include <iostream>
-#include <string>
-#include <memory>
+#include <mutex>
 
-class A {
-public:
-	int a;
-};
 
-std::thread t2;
-void add(int &num)
+std::mutex mutx1;
+int b = 0;
+
+void func1()
 {
-	num += 1;
+	for (int i = 0; i < 1000; i++)
+	{
+		mutx1.lock();
+		b += 1;
+		mutx1.unlock();
+	}
 }
 
-// 2:error
-void test()
-{
-	// ÐèÒª±ä³ÉÈ«¾Ö±äÁ¿
-	int num = 0;
-	// ÄÜ±àÒëµ«ÊÇ¿ÕÖ¸Õë
-	t2 = std::thread(add, std::ref(num));
-}
-
-// 
-void testClass(A& a)
-{
-
-}
 
 int main()
 {
+	std::thread t5(func1);
+	std::thread t6(func1);
+	t5.join();
+	t6.join();
+
+	std::cout << b << std::endl;
 	
-	// 1:error
-	// std::thread t1(add, 1);
-
-	// 1:success
-	int num = 0;
-	std::thread t1(add, std::ref(num));
-
-	// 2:error
-	// test();
-
-	// 3:ÔÚÏß³ÌÀïÃæ´«Èë¶ÔÏóµÄÊ±ºòÒªÓÃÖÇÄÜÖ¸Õë
-	// ÕâÊÇ´íµÄ -> A a ;
-
-	std::shared_ptr<A> a = std::make_shared<A>();
-	std::thread t2(testClass, &a);
-
-	t1.join();
 	return 0;
 }

@@ -13,5 +13,6 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="day1.cpp" />
+    <ClCompile Include="day2.cpp" />
   </ItemGroup>
 </Project>
