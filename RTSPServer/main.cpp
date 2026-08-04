@@ -10,9 +10,10 @@ void func1()
 {
 	for (int i = 0; i < 1000; i++)
 	{
-		mutx1.lock();
+		std::lock_guard<std::mutex> mu(mutx1);
+		//mutx1.lock();
 		b += 1;
-		mutx1.unlock();
+		//mutx1.unlock();
 	}
 }
 
