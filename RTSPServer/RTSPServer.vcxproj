@@ -153,6 +153,7 @@
     <ClCompile Include="day3.cpp" />
     <ClCompile Include="day4(2).cpp" />
     <ClCompile Include="day4.cpp" />
+    <ClCompile Include="Threadpool.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

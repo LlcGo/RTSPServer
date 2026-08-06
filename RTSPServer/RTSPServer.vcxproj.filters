@@ -16,5 +16,6 @@
     <ClCompile Include="day2.cpp" />
     <ClCompile Include="day3.cpp" />
     <ClCompile Include="day4(2).cpp" />
+    <ClCompile Include="Threadpool.cpp" />
   </ItemGroup>
 </Project>
