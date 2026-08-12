@@ -9,6 +9,9 @@
     <ClInclude Include="Scheduler\Thread.h">
       <Filter>Scheduler</Filter>
     </ClInclude>
+    <ClInclude Include="EnventScheduler.h" />
+    <ClInclude Include="Poller.h" />
+    <ClInclude Include="Event.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="day4.cpp" />
@@ -17,5 +20,8 @@
     <ClCompile Include="day3.cpp" />
     <ClCompile Include="day4(2).cpp" />
     <ClCompile Include="Threadpool.cpp" />
+    <ClCompile Include="EnventScheduler.cpp" />
+    <ClCompile Include="Poller.cpp" />
+    <ClCompile Include="Event.cpp" />
   </ItemGroup>
 </Project>

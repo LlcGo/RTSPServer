@@ -145,6 +145,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="EnventScheduler.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="Poller.h" />
     <ClInclude Include="Scheduler\Thread.h" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +156,9 @@
     <ClCompile Include="day3.cpp" />
     <ClCompile Include="day4(2).cpp" />
     <ClCompile Include="day4.cpp" />
+    <ClCompile Include="EnventScheduler.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="Poller.cpp" />
     <ClCompile Include="Threadpool.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
