@@ -4,6 +4,9 @@
     <Filter Include="Scheduler">
       <UniqueIdentifier>{52018c58-0d8d-424f-9c21-4295765da1aa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ThreadLearn">
+      <UniqueIdentifier>{09104f99-1ea6-4c31-a3e8-da70b278f239}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scheduler\Thread.h">
@@ -12,16 +15,30 @@
     <ClInclude Include="EnventScheduler.h" />
     <ClInclude Include="Poller.h" />
     <ClInclude Include="Event.h" />
+    <ClInclude Include="SelectPoller.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="day4.cpp" />
-    <ClCompile Include="day1.cpp" />
-    <ClCompile Include="day2.cpp" />
-    <ClCompile Include="day3.cpp" />
-    <ClCompile Include="day4(2).cpp" />
-    <ClCompile Include="Threadpool.cpp" />
     <ClCompile Include="EnventScheduler.cpp" />
     <ClCompile Include="Poller.cpp" />
     <ClCompile Include="Event.cpp" />
+    <ClCompile Include="day1.cpp">
+      <Filter>ThreadLearn</Filter>
+    </ClCompile>
+    <ClCompile Include="day2.cpp">
+      <Filter>ThreadLearn</Filter>
+    </ClCompile>
+    <ClCompile Include="day3.cpp">
+      <Filter>ThreadLearn</Filter>
+    </ClCompile>
+    <ClCompile Include="day4(2).cpp">
+      <Filter>ThreadLearn</Filter>
+    </ClCompile>
+    <ClCompile Include="day4.cpp">
+      <Filter>ThreadLearn</Filter>
+    </ClCompile>
+    <ClCompile Include="Threadpool.cpp">
+      <Filter>ThreadLearn</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectPoller.cpp" />
   </ItemGroup>
 </Project>
