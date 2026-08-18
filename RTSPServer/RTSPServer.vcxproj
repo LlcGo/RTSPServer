@@ -150,6 +150,7 @@
     <ClInclude Include="Poller.h" />
     <ClInclude Include="Scheduler\Thread.h" />
     <ClInclude Include="SelectPoller.h" />
+    <ClInclude Include="SocketsOps.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="day1.cpp" />
@@ -161,6 +162,7 @@
     <ClCompile Include="Event.cpp" />
     <ClCompile Include="Poller.cpp" />
     <ClCompile Include="SelectPoller.cpp" />
+    <ClCompile Include="SocketsOps.cpp" />
     <ClCompile Include="Threadpool.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

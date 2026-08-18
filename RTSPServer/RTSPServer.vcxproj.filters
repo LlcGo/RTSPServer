@@ -16,6 +16,7 @@
     <ClInclude Include="Poller.h" />
     <ClInclude Include="Event.h" />
     <ClInclude Include="SelectPoller.h" />
+    <ClInclude Include="SocketsOps.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EnventScheduler.cpp" />
@@ -40,5 +41,6 @@
       <Filter>ThreadLearn</Filter>
     </ClCompile>
     <ClCompile Include="SelectPoller.cpp" />
+    <ClCompile Include="SocketsOps.cpp" />
   </ItemGroup>
 </Project>
