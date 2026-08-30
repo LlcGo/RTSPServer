@@ -18,7 +18,7 @@ public:
 	~Timer();
 
 	static Timestamp getCurTime();
-	static Timestamp getCurTimestamp;
+	static Timestamp getCurTimestamp();
 
 private:
 	friend class TimerManager;
@@ -30,7 +30,7 @@ private:
 private:
 	TimerEvent* mTimerEvent;
 	Timestamp mTimestamp;
-	TimeInterval mTimerId;
+	TimeInterval mTimerInterval;
 	TimerId mTimerId;
 
 	bool mRepeat;
@@ -45,4 +45,20 @@ public:
 	~TimerManager();
 
 	Timer::TimerId addTimer(TimerEvent* event, Timer::Timestamp timestamp, Timer::TimeInterval timeInterval);
+	bool removeTimer(Timer::TimerId timerId);
+private:
+	static void readCallback(void* arg);
+	void handleRead();
+	void modifyTimeout();
+
+private:
+	Poller* mPoller;
+	std::map<Timer::TimerId, Timer> mTimers;
+	std::multimap<Timer::Timestamp, Timer> mEvents;
+	uint32_t mLastTimerId;
+
+#ifndef WIN32
+	int mTimerFd;
+	IOEvent* mTimerIOEvent;
+#endif // !WIN32
 };

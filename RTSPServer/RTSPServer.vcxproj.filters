@@ -12,37 +12,76 @@
     <ClInclude Include="Scheduler\Thread.h">
       <Filter>Scheduler</Filter>
     </ClInclude>
-    <ClInclude Include="EnventScheduler.h" />
-    <ClInclude Include="Poller.h" />
-    <ClInclude Include="Event.h" />
-    <ClInclude Include="SelectPoller.h" />
-    <ClInclude Include="SocketsOps.h" />
-    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Scheduler\EnventScheduler.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\Event.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\Poller.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\SelectPoller.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\SocketsOps.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\Timer.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\UsageEnvironment.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduler\ThreadPool.h">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="EnventScheduler.cpp" />
-    <ClCompile Include="Poller.cpp" />
-    <ClCompile Include="Event.cpp" />
-    <ClCompile Include="day1.cpp">
+    <ClCompile Include="Scheduler\EnventScheduler.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\Event.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\Poller.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\SelectPoller.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\SocketsOps.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\Timer.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduler\UsageEnvironment.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="learnThreadPool\day1.cpp">
       <Filter>ThreadLearn</Filter>
     </ClCompile>
-    <ClCompile Include="day2.cpp">
+    <ClCompile Include="learnThreadPool\day2.cpp">
       <Filter>ThreadLearn</Filter>
     </ClCompile>
-    <ClCompile Include="day3.cpp">
+    <ClCompile Include="learnThreadPool\day3.cpp">
       <Filter>ThreadLearn</Filter>
     </ClCompile>
-    <ClCompile Include="day4(2).cpp">
+    <ClCompile Include="learnThreadPool\day4(2).cpp">
       <Filter>ThreadLearn</Filter>
     </ClCompile>
-    <ClCompile Include="day4.cpp">
+    <ClCompile Include="learnThreadPool\day4.cpp">
       <Filter>ThreadLearn</Filter>
     </ClCompile>
-    <ClCompile Include="Threadpool.cpp">
+    <ClCompile Include="learnThreadPool\Thread.cpp">
       <Filter>ThreadLearn</Filter>
     </ClCompile>
-    <ClCompile Include="SelectPoller.cpp" />
-    <ClCompile Include="SocketsOps.cpp" />
-    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Scheduler\Threadpool.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

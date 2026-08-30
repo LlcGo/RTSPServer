@@ -145,27 +145,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="EnventScheduler.h" />
-    <ClInclude Include="Event.h" />
-    <ClInclude Include="Poller.h" />
+    <ClInclude Include="Scheduler\EnventScheduler.h" />
+    <ClInclude Include="Scheduler\Event.h" />
+    <ClInclude Include="Scheduler\Poller.h" />
+    <ClInclude Include="Scheduler\SelectPoller.h" />
+    <ClInclude Include="Scheduler\SocketsOps.h" />
     <ClInclude Include="Scheduler\Thread.h" />
-    <ClInclude Include="SelectPoller.h" />
-    <ClInclude Include="SocketsOps.h" />
-    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Scheduler\ThreadPool.h" />
+    <ClInclude Include="Scheduler\Timer.h" />
+    <ClInclude Include="Scheduler\UsageEnvironment.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="day1.cpp" />
-    <ClCompile Include="day2.cpp" />
-    <ClCompile Include="day3.cpp" />
-    <ClCompile Include="day4(2).cpp" />
-    <ClCompile Include="day4.cpp" />
-    <ClCompile Include="EnventScheduler.cpp" />
-    <ClCompile Include="Event.cpp" />
-    <ClCompile Include="Poller.cpp" />
-    <ClCompile Include="SelectPoller.cpp" />
-    <ClCompile Include="SocketsOps.cpp" />
-    <ClCompile Include="Threadpool.cpp" />
-    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="learnThreadPool\day1.cpp" />
+    <ClCompile Include="learnThreadPool\day2.cpp" />
+    <ClCompile Include="learnThreadPool\day3.cpp" />
+    <ClCompile Include="learnThreadPool\day4(2).cpp" />
+    <ClCompile Include="learnThreadPool\day4.cpp" />
+    <ClCompile Include="learnThreadPool\Thread.cpp" />
+    <ClCompile Include="Scheduler\EnventScheduler.cpp" />
+    <ClCompile Include="Scheduler\Event.cpp" />
+    <ClCompile Include="Scheduler\Poller.cpp" />
+    <ClCompile Include="Scheduler\SelectPoller.cpp" />
+    <ClCompile Include="Scheduler\SocketsOps.cpp" />
+    <ClCompile Include="Scheduler\Threadpool.cpp" />
+    <ClCompile Include="Scheduler\Timer.cpp" />
+    <ClCompile Include="Scheduler\UsageEnvironment.cpp" />
+    <ClCompile Include="Thread.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

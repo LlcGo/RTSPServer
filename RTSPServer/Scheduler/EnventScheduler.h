@@ -28,7 +28,7 @@ public:
 	Timer::TimerId addTimedEventRunAt(TimerEvent* event, Timer::Timestamp when);
 	Timer::TimerId addTimedEventRunEvery(TimerEvent* event, Timer::TimeInterval interval);
 
-	bool removeTimeEvent(Timer::TimerId timerId);
+	bool removeIOEvent(IOEvent* event);
 	bool addIOEvent(IOEvent* event);
 	bool updateIOEvent(IOEvent* event);
 	bool remove(IOEvent* event);
@@ -39,6 +39,18 @@ public:
 	void setTimerManagerReadCallback(EventCallback cb, void* arg);
 
 private:
-	bool mQuit;
+	void handleTriggerEvents();
 
+private:
+	bool mQuit;
+	Poller* mPoller;
+	TimerManager* mTimerManager;
+	std::vector<TriggerEvent*> mTriggerEvents;
+
+	std::mutex mMtx;
+
+	//WIN
+	EventCallback mTimerManagerReadCallback;
+	void* mTimerManagerArg;
+	//END
 };
