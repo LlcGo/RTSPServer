@@ -7,6 +7,9 @@
     <Filter Include="ThreadLearn">
       <UniqueIdentifier>{09104f99-1ea6-4c31-a3e8-da70b278f239}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Live">
+      <UniqueIdentifier>{96831740-d949-4fb6-bb60-81746da4b846}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scheduler\Thread.h">
@@ -35,6 +38,9 @@
     </ClInclude>
     <ClInclude Include="Scheduler\ThreadPool.h">
       <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\Rtp.h">
+      <Filter>Live</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +88,9 @@
     </ClCompile>
     <ClCompile Include="Scheduler\Threadpool.cpp">
       <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Live\Rtp.cpp">
+      <Filter>Live</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

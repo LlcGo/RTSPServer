@@ -145,6 +145,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Live\Rtp.h" />
     <ClInclude Include="Scheduler\EnventScheduler.h" />
     <ClInclude Include="Scheduler\Event.h" />
     <ClInclude Include="Scheduler\Poller.h" />
@@ -162,6 +163,7 @@
     <ClCompile Include="learnThreadPool\day4(2).cpp" />
     <ClCompile Include="learnThreadPool\day4.cpp" />
     <ClCompile Include="learnThreadPool\Thread.cpp" />
+    <ClCompile Include="Live\Rtp.cpp" />
     <ClCompile Include="Scheduler\EnventScheduler.cpp" />
     <ClCompile Include="Scheduler\Event.cpp" />
     <ClCompile Include="Scheduler\Poller.cpp" />
