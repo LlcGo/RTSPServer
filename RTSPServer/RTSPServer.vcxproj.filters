@@ -42,6 +42,12 @@
     <ClInclude Include="Live\Rtp.h">
       <Filter>Live</Filter>
     </ClInclude>
+    <ClInclude Include="Live\RtspInstance.h">
+      <Filter>Live</Filter>
+    </ClInclude>
+    <ClInclude Include="Live\InetAddress.h">
+      <Filter>Live</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Scheduler\EnventScheduler.cpp">
@@ -90,6 +96,9 @@
       <Filter>Scheduler</Filter>
     </ClCompile>
     <ClCompile Include="Live\Rtp.cpp">
+      <Filter>Live</Filter>
+    </ClCompile>
+    <ClCompile Include="Live\InetAddress.cpp">
       <Filter>Live</Filter>
     </ClCompile>
   </ItemGroup>
